@@ -1,0 +1,13 @@
+/_build
+/cover
+/deps
+/doc
+/.fetch
+erl_crash.dump
+*.ez
+*.beam
+/config/*.secret.exs
+.elixir_ls
+.env
+elixir_auth_google.iml
+.idea

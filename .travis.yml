@@ -1,0 +1,15 @@
+language: elixir
+matrix:
+  include:
+    - elixir: 1.12.3
+      otp_release: 24.0.2
+env:
+  MIX_ENV=test
+script:
+  - mix coveralls.json
+after_success:
+  - bash <(curl -s https://codecov.io/bash) # send coverage report
+cache:
+  directories:
+    - _build
+    - deps
